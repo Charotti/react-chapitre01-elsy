@@ -1,4 +1,9 @@
 .material-icons {
-    font-size: 100;
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v92/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2)
+        format("woff2");
+    font-size: 100px;
     color: black;
 }
