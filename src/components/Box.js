@@ -5,7 +5,7 @@ class Box extends React.Component {
     if (this.props.icon !== "local_drink") {
       return (
         <form>
-          <input type="range" min="0" max="0"></input>
+          <input min="0" max="0" value="" onImput=""></input>
         </form>
       );
     }
