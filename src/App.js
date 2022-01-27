@@ -12,15 +12,24 @@ const stepsMin = 0;
 const stepsMax = 50000;
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      water: 0,
+      heart: 120,
+      temperature: -10,
+      steps: 3000,
+    };
+  }
+
   render() {
     return (
       <div className="container-fluid ">
         <div className="row">
           {/* <Steps></Steps> */}
-          <p>heart :{heartMin}</p>
-          <p>Temperature : {tempMin}</p>
-          <p>Steps : {stepsMin}</p>
-
+          heart :{heartMin}
+          Temperature : {tempMin}
+          Steps : {stepsMin}
           {/* PARTIE SUR LES BOX PAIRES ET IMPAIRES */}
           {/* <div className="box-pair">box-pair</div>
              <div className="box-impair">box-impair</div> */}
