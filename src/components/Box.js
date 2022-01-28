@@ -4,9 +4,14 @@ class Box extends React.Component {
   renderInputWater() {
     if (this.props.icon !== "local_drink") {
       return (
-        <form>
-          <input min="0" max="0" value="" onImput=""></input>
-        </form>
+        <div>
+          <input
+            min={this.props.min}
+            max={this.props.max}
+            onChange={(e) => this.props.onInput(e)}
+            type="range"
+          ></input>
+        </div>
       );
     }
   }
